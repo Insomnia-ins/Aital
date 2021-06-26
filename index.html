@@ -1,0 +1,84 @@
+<div class="question1" style="height: 450px; width: 400px; background: gray;">
+	<img src="tetris.jpg" style="width: 400px;">
+	<h1>Вопрос: Какая здесь игра?</h1>
+	<div class="anws1" style="height: 35px; width: 250px; background: limegreen;">Ответ 1: Terraria</div>
+	<div class="anws2" style="height: 35px; width: 250px; background: green;">Ответ 2: Minecraft</div>
+	<div class="anws3" style="height: 35px; width: 250px; background: darkgreen;">Ответ 3: Tetris</div>
+</div>
+
+<div class="question2" style="height: 450px; width: 400px; background: blue; display: none;">
+	<img src="Dream.png" style="width: 400px;">
+	<h1>Вопрос: Dream - это...</h1>
+	<div class="anws1" style="height: 35px; width: 250px; background: limegreen;">Ответ 1: Minecraft-SpeedRunner</div>
+	<div class="anws2" style="height: 35px; width: 250px; background: green;">Ответ 2: Animator</div>
+	<div class="anws3" style="height: 35px; width: 250px; background: darkgreen;">Ответ 3: Sportsmen</div>
+</div>
+
+<div class="question3" style="height: 630px; width: 400px; background: red; display: none;">
+	<img src="PlayStation.png" style="width: 400px;">
+	<h1>Вопрос: Какая здесь приставка?</h1>
+	<div class="anws1" style="height: 35px; width: 250px; background: limegreen;">Ответ 1: Xbox</div>
+	<div class="anws2" style="height: 35px; width: 250px; background: green;">Ответ 2: PlayStation</div>
+	<div class="anws3" style="height: 35px; width: 250px; background: darkgreen;">Ответ 3: Nintendo</div>
+</div>
+
+<div class="question4" style="height: 530px; width: 400px; background: gray; margin-left: 400px; display: none;">
+	<img src="diamond.webp" style="width: 400px;">
+	<h1>Вопрос: Возможно ли сломать бриллиант?</h1>
+	<div class="anws1" style="height: 35px; width: 250px; background: limegreen;">Ответ 1: Нет</div>
+	<div class="anws2" style="height: 35px; width: 250px; background: green;">Ответ 2: Да</div>
+	<div class="anws3" style="height: 35px; width: 250px; background: darkgreen;">Ответ 3: Только им самим</div>
+</div>
+
+<div class="question5" style="height: 600px; width: 400px; background: gray; margin-left: 400px; display: none;">
+	<img src="вапролик.png" style="width: 400px;">
+	<h1>Вопрос: Великий конструктор?</h1>
+	<div class="anws1" style="height: 35px; width: 250px; background: limegreen;">Ответ 1: Lego</div>
+	<div class="anws2" style="height: 35px; width: 250px; background: green;">Ответ 2: Металлический</div>
+	<div class="anws3" style="height: 35px; width: 250px; background: darkgreen;">Ответ 3: Магнитный</div>
+</div>
+
+<div class="question6" style="height: 600px; width: 400px; background: gray; margin-left: 400px; display: none;">
+	<img src="вапролик.png" style="width: 400px;">
+	<h1>Вопрос: Понравился тебе тест??</h1>
+	<div class="anws1" style="height: 35px; width: 250px; background: limegreen;">Ответ 1: Да</div>
+	<div class="anws2" style="height: 35px; width: 250px; background: green;">Ответ 2: Нет</div>
+	<div class="anws3" style="height: 35px; width: 250px; background: darkgreen;">Ответ 3: Так себе</div>
+</div>
+
+<div class="question7" style="height: 45px; width: 400px; background: yellow; margin-left: 400px; display: none;"> 
+    <h1>Спасибо!</h1>  
+</div>
+
+<div class="question8" style="height: 65px; width: 400px; background: yellow; margin-left: 400px; display: none;"> 
+    <h1>Постараюсь сделать получше!</h1>  
+</div>
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script> 
+
+<script>
+    find("question1 anws1").click("alert","Неправильно! У тебя есть еще одна попытка.");
+    find("question1 anws2").click("alert","Неправильно! У тебя есть еще одна попытка.");
+    find("question1 anws3").click("show","question2","Правильно! Ты молодец!");
+
+    find("question2 anws1").click("show","question3","Правильно! Ты молодец!");
+    find("question2 anws2").click("alert","Неправильно! У тебя есть еще одна попытка.");
+    find("question2 anws3").click("alert","Неправильно! У тебя есть еще одна попытка.");
+
+    find("question3 anws1").click("alert","Неправильно! У тебя есть еще одна попытка.");
+    find("question3 anws2").click("show","question4","Правильно! Ты молодец!");
+    find("question3 anws3").click("alert","Неправильно! У тебя есть еще одна попытка.");
+
+    find("question4 anws1").click("alert","Неправильно! У тебя есть еще одна попытка.");
+    find("question4 anws2").click("alert","Неправильно! У тебя есть еще одна попытка.");
+    find("question4 anws3").click("show","question5","Правильно! Ты молодец!");
+
+    find("question5 anws1").click("show","question6","Правильно! Ты молодец!");
+    find("question5 anws2").click("alert","Неправильно! У тебя есть еще одна попытка.");
+    find("question5 anws3").click("alert","Неправильно! У тебя есть еще одна попытка.");
+
+    find("question6 anws1").click("show","question7","Нажми на OK");
+    find("question6 anws2").click("show","question8","Нажми на OK");
+    find("question6 anws3").click("show","question8","Нажми на OK");
+
+</script> 
